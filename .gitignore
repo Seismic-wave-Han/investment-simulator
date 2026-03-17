@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual env
+.venv/
+venv/
+.python-version
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local notes (generated files)
+notes/*.txt
+
+# Media
+*.mov
+
+# Editor / tooling
+.cursor/
+.vscode/
+
