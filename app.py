@@ -48,6 +48,10 @@ st.markdown(
     [data-testid="stToolbar"] {
       display: block;
     }
+    /* 헤더가 컨텐츠 위에 겹치지 않도록 상단 여백 추가 */
+    [data-testid="stAppViewContainer"] .block-container {
+      padding-top: 4.25rem;
+    }
   }
 </style>
 """,
