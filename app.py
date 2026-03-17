@@ -18,7 +18,7 @@ from calc import (
 )
 
 
-st.set_page_config(page_title="투자 시나리오 비교", layout="wide")
+st.set_page_config(page_title="투자 시나리오 비교", layout="wide", initial_sidebar_state="expanded")
 st.markdown(
     """
 <style>
@@ -38,6 +38,16 @@ st.markdown(
   [data-testid="stAppViewContainer"] .block-container {
     padding-top: 0.75rem;
     padding-bottom: 1rem;
+  }
+
+  /* 모바일에서는 사이드바 토글(헤더)을 다시 노출 */
+  @media (max-width: 768px) {
+    [data-testid="stHeader"] {
+      display: block;
+    }
+    [data-testid="stToolbar"] {
+      display: block;
+    }
   }
 </style>
 """,
